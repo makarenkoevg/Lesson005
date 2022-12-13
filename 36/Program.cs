@@ -1,5 +1,5 @@
 ﻿//Задайте одномерный массив, заполненный случайными числами. 
-// Найдите сумму элементов, стоящих на нечётных позициях (не индексах, а позициях!!!)
+// Найдите сумму элементов, стоящих на нечётных позициях 
 
 using System;
 using static System.Console;
@@ -27,7 +27,7 @@ int[] GetArray(int m, int min, int max)
 int Summ(int[] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i+=2)
+    for (int i = 1; i < array.Length; i+=2)
     {
         sum+=array[i];
     }
